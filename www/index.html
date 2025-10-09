@@ -200,6 +200,9 @@
     // ButtonCがクリックされた時の処理
     function btnCClick(e){
         alarm();
+        active = false;
+        period = 60* parseInt( $("#minute").val() ) + parseInt( $("#second").val() );
+        $("#time").html("残り時間： " + period);
         
     }
     
