@@ -66,3 +66,7 @@
     }
     
     input[type=number] {text-align: right;}
+
+    body{
+        background:  skyblue;
+    }
