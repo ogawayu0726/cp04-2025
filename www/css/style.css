@@ -20,6 +20,7 @@
         color: #ff0000;
         font-size: 20px;
         text-align: center;
+        font-weight: bold;
         position:absolute; top:310px; 
         left:10px; right:10px;
     }
