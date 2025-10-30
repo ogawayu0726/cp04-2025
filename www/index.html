@@ -156,6 +156,8 @@
     var rest = 0;
     var etime = 0;
     var pausetime = 0; //停止までの経過時間
+    //var btnchun = parseInt(period / 60); //分表記
+    //var btncbyo = period % 60; //秒表記
 
 
 
@@ -205,7 +207,7 @@
         alarm();
         active = false;
         period = 60* parseInt( $("#minute").val() ) + parseInt( $("#second").val() );
-        $("#time").html("残り時間： " + period);
+        $("#time").html("残り時間： " + parseInt(period / 60) + "分"+ period % 60 + "秒");
         pausetime = 0;
         
     }
@@ -226,7 +228,7 @@
                 var nbyo = rest % 60; //秒表記
 
             $("#time").html("経過時間： " + khun + "分" + kbyo + "秒");
-            $("#remain").html("残り時間： " + khun + "分" + nbyo + "秒");
+            $("#remain").html("残り時間： " + nhun + "分" + nbyo + "秒");
             analog(rest);
 
             if(rest <= 0){
